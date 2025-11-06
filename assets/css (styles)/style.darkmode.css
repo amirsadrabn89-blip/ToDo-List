@@ -44,7 +44,6 @@
     background: linear-gradient(rgb(0, 68, 123) , rgb(0, 68, 123 , 0.8) , rgb(0, 68, 123 , 0.6) , rgb(0, 68, 123 , 0.4) , rgb(0, 68, 123 , 0.2)) !important;
 }
 .delete_all_item_box{
-<<<<<<< HEAD
     bottom: 150px;
     left: 10%;
     right: 10%;
@@ -55,13 +54,12 @@
     right:7px;
 }
 .help_button_box_button:hover i{
-=======
+
     top: 9px;
     right:7px;
     font-weight: bolder;
 }
 .delete_all_item_button{
->>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
     transition-duration: 300ms;
 }
 .delete_all_item_button:hover{
@@ -82,7 +80,6 @@
     background-color: rgb(0, 60, 109) !important;
 }
 .circle-top-right {
-<<<<<<< HEAD
     top: 8px;
     right: 8px;
 }
@@ -95,7 +92,6 @@
     right: 8px;
 }
 .circle-bottom-left {
-=======
     bottom: 8px;
     left: 8px;
 }
