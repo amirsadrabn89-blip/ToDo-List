@@ -15,6 +15,7 @@
 =======
     transition-duration: 300ms !important;
 >>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
+    transition-duration: 300ms;
     border: 2px solid rgba(255, 255, 255, 0) !important;
 }
 .setting_and_user_button:hover{
@@ -24,33 +25,50 @@
 .setting_box{
 <<<<<<< HEAD
 =======
+    width: 10px;
 }
 .todo_item_span_count{
+    width:20px ;
+    height:20px ;
 }
 .todo_item_style{
+    width: 820px;
+    word-wrap: break-word;
+    display: inline-block;
 }
 .todo_item_buttons_box{
->>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
+    height: 50px;
+    left: -250px;
 }
 .offcanvas_help_section{
     background: linear-gradient(rgb(0, 68, 123) , rgb(0, 68, 123 , 0.8) , rgb(0, 68, 123 , 0.6) , rgb(0, 68, 123 , 0.4) , rgb(0, 68, 123 , 0.2)) !important;
 }
 .delete_all_item_box{
 <<<<<<< HEAD
+    bottom: 150px;
+    left: 10%;
+    right: 10%;
 }
 .help_button_box_button i{
+    transition-duration: 200ms;
+    top: 7px;
+    right:7px;
 }
 .help_button_box_button:hover i{
 =======
+    top: 9px;
+    right:7px;
     font-weight: bolder;
 }
 .delete_all_item_button{
 >>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
+    transition-duration: 300ms;
 }
 .delete_all_item_button:hover{
     background-color: rgb(255, 175, 175) !important;
 }
 .rubic_font{
+    font-family: "Rubik", sans-serif;
 }
 .switch_light_and_dark_mode_button{
     top: 75px !important;
@@ -58,21 +76,28 @@
     border:2px solid rgb(183, 202, 255) !important;
     background-color: rgb(0, 92, 168) !important;
     color: rgb(214, 225, 255) !important;
+    transition-duration: 300ms;
 }
 .switch_light_and_dark_mode_button:hover{
     background-color: rgb(0, 60, 109) !important;
 }
 .circle-top-right {
 <<<<<<< HEAD
+    top: 8px;
+    right: 8px;
 }
 .circle-top-left {
     top: 8px!important;
     left: 8px!important;
 }
 .circle-bottom-right {
+    bottom: 8px;
+    right: 8px;
 }
 .circle-bottom-left {
 =======
+    bottom: 8px;
+    left: 8px;
 }
 
 
@@ -135,12 +160,14 @@
     border:2px solid rgb(183, 202, 255) !important;
     background-color: rgb(0, 92, 168) !important;
     color: rgb(214, 225, 255) !important;
+    transition-duration: 300ms;
 }
 .dm_offcanvas_close_button:hover{
     background-color: rgb(0, 55, 100) !important;
 }
 .dm_delete_all_item_button{
     background-color: rgb(133, 62, 62) !important;
+    transition-duration: 300ms;
 }
 .dm_delete_all_item_button:hover{
     background-color: rgb(111, 44, 44) !important;
@@ -196,6 +223,7 @@
 .todo_header_box{
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) !important;
     background: linear-gradient(rgb(40, 79, 137) , rgb(60, 105, 174) , rgb(74, 117, 182) ,rgb(114, 155, 217)) !important;
+    height: 163px;
 }
 .dm_todo_input{
     background-color:rgb(39, 78, 136) !important;
@@ -220,6 +248,7 @@
     border:2px solid rgb(135, 167, 255) !important;
     background-color:rgb(39, 78, 136) !important;
     color: rgb(183, 202, 255) !important;
+    transition-duration: 300ms;
 }
 .dm_todo_add_button:hover{
     background-color:rgb(23, 48, 86) !important;
@@ -247,6 +276,8 @@
 }
 .todo_item{
     border:2px solid rgb(135, 167, 255) !important;
+    background-color:rgb(39, 78, 136);
+    color: rgb(185, 204, 255);
 }
 
 
