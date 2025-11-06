@@ -30,3 +30,9 @@ JavaScript (ES6)
 SweetAlert2 for stylish alert dialogs
 
 LocalStorage for persistent data
+
+<img width="1439" height="782" alt="image" src="https://github.com/user-attachments/assets/9c016dff-5c0c-4338-a75f-15fdfbc07ffb" />
+
+<img width="1920" height="954" alt="image" src="https://github.com/user-attachments/assets/3957a6b7-a43d-42fb-84b8-1a6f36e363e2" />
+
+
