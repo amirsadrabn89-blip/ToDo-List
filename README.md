@@ -33,6 +33,13 @@ LocalStorage for persistent data
 
 <img width="1439" height="782" alt="image" src="https://github.com/user-attachments/assets/9c016dff-5c0c-4338-a75f-15fdfbc07ffb" />
 
-<img width="1920" height="954" alt="image" src="https://github.com/user-attachments/assets/3957a6b7-a43d-42fb-84b8-1a6f36e363e2" />
+<img width="1920" height="953" alt="image" src="https://github.com/user-attachments/assets/ac763825-4b5c-4ed3-9342-f004bc38dc64" />
+
+<img width="1920" height="950" alt="image" src="https://github.com/user-attachments/assets/23b40087-4fd5-426e-b812-823f41e2cdb7" />
+
+<img width="1920" height="952" alt="image" src="https://github.com/user-attachments/assets/5ea37f11-6b4c-4529-9752-1c6d8ae48416" />
+
+
+
 
 
