@@ -11,7 +11,11 @@
     align-items: center !important;
 }
 .setting_and_user_button{
+<<<<<<< HEAD
     transition-duration: 300ms!important;
+=======
+    transition-duration: 300ms !important;
+>>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
     border: 2px solid rgba(255, 255, 255, 0) !important;
 }
 .setting_and_user_button:hover{
@@ -19,6 +23,7 @@
     border: 2px solid rgb(42, 116, 255) !important;
 }
 .setting_box{
+<<<<<<< HEAD
     width: 10px!important;
 }
 .todo_item_span_count{
@@ -33,11 +38,28 @@
 .todo_item_buttons_box{
     height: 50px!important;
     left: -250px!important;
+=======
+    width: 10px !important;
+}
+.todo_item_span_count{
+    width:20px  !important;
+    height:20px  !important;
+}
+.todo_item_style{
+    width: 820px !important;
+    word-wrap: break-word !important;
+    display: inline-block !important;
+}
+.todo_item_buttons_box{
+    height: 50px !important;
+    left: -250px !important;
+>>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
 }
 .offcanvas_help_section{
     background: linear-gradient(rgb(0, 68, 123) , rgb(0, 68, 123 , 0.8) , rgb(0, 68, 123 , 0.6) , rgb(0, 68, 123 , 0.4) , rgb(0, 68, 123 , 0.2)) !important;
 }
 .delete_all_item_box{
+<<<<<<< HEAD
     bottom: 150px!important;
     left: 10%!important;
     right: 10%!important;
@@ -54,6 +76,24 @@
 }
 .delete_all_item_button{
     transition-duration: 300ms!important;
+=======
+    bottom: 150px !important;
+    left: 10% !important;
+    right: 10% !important;
+}
+.help_button_box_button i{
+    transition-duration: 200ms !important;
+    top: 7px !important;
+    right:7px !important;
+}
+.help_button_box_button:hover i{
+    top: 9px !important;
+    right:7px !important;
+    font-weight: bolder;
+}
+.delete_all_item_button{
+    transition-duration: 300ms !important;
+>>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
 }
 .delete_all_item_button:hover{
     background-color: rgb(255, 175, 175) !important;
@@ -73,6 +113,7 @@
     background-color: rgb(0, 60, 109) !important;
 }
 .circle-top-right {
+<<<<<<< HEAD
     top: 8px!important;
     right: 8px!important;
 }
@@ -87,6 +128,22 @@
 .circle-bottom-left {
     bottom: 8px!important;
     left: 8px!important;
+=======
+    top: 8px !important;
+    right: 8px !important;
+}
+.circle-top-left {
+    top: 8px !important;
+    left: 8px !important;
+}
+.circle-bottom-right {
+    bottom: 8px !important;
+    right: 8px !important;
+}
+.circle-bottom-left {
+    bottom: 8px !important;
+    left: 8px !important;
+>>>>>>> 4b50711350635293e53ffaa5c286b13be492ea04
 }
 
 
@@ -149,14 +206,14 @@
     border:2px solid rgb(183, 202, 255) !important;
     background-color: rgb(0, 92, 168) !important;
     color: rgb(214, 225, 255) !important;
-    transition-duration: 300ms;
+    transition-duration: 300ms !important;
 }
 .dm_offcanvas_close_button:hover{
     background-color: rgb(0, 55, 100) !important;
 }
 .dm_delete_all_item_button{
     background-color: rgb(133, 62, 62) !important;
-    transition-duration: 300ms;
+    transition-duration: 300ms !important;
 }
 .dm_delete_all_item_button:hover{
     background-color: rgb(111, 44, 44) !important;
