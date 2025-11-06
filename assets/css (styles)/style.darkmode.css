@@ -11,7 +11,7 @@
     align-items: center !important;
 }
 .setting_and_user_button{
-    transition-duration: 300ms;
+    transition-duration: 300ms!important;
     border: 2px solid rgba(255, 255, 255, 0) !important;
 }
 .setting_and_user_button:hover{
@@ -19,47 +19,47 @@
     border: 2px solid rgb(42, 116, 255) !important;
 }
 .setting_box{
-    width: 10px;
+    width: 10px!important;
 }
 .todo_item_span_count{
-    width:20px ;
-    height:20px ;
+    width:20px !important;
+    height:20px !important;
 }
 .todo_item_style{
-    width: 820px;
-    word-wrap: break-word;
-    display: inline-block;
+    width: 820px!important;
+    word-wrap: break-word!important;
+    display: inline-block!important;
 }
 .todo_item_buttons_box{
-    height: 50px;
-    left: -250px;
+    height: 50px!important;
+    left: -250px!important;
 }
 .offcanvas_help_section{
     background: linear-gradient(rgb(0, 68, 123) , rgb(0, 68, 123 , 0.8) , rgb(0, 68, 123 , 0.6) , rgb(0, 68, 123 , 0.4) , rgb(0, 68, 123 , 0.2)) !important;
 }
 .delete_all_item_box{
-    bottom: 150px;
-    left: 10%;
-    right: 10%;
+    bottom: 150px!important;
+    left: 10%!important;
+    right: 10%!important;
 }
 .help_button_box_button i{
-    transition-duration: 200ms;
-    top: 7px;
-    right:7px;
+    transition-duration: 200ms!important;
+    top: 7px!important;
+    right:7px!important;
 }
 .help_button_box_button:hover i{
-    top: 9px;
-    right:7px;
-    font-weight: bolder;
+    top: 9px!important;
+    right:7px!important;
+    font-weight: bolder!important;
 }
 .delete_all_item_button{
-    transition-duration: 300ms;
+    transition-duration: 300ms!important;
 }
 .delete_all_item_button:hover{
     background-color: rgb(255, 175, 175) !important;
 }
 .rubic_font{
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif!important;
 }
 .switch_light_and_dark_mode_button{
     top: 75px !important;
@@ -67,26 +67,26 @@
     border:2px solid rgb(183, 202, 255) !important;
     background-color: rgb(0, 92, 168) !important;
     color: rgb(214, 225, 255) !important;
-    transition-duration: 300ms;
+    transition-duration: 300ms!important;
 }
 .switch_light_and_dark_mode_button:hover{
     background-color: rgb(0, 60, 109) !important;
 }
 .circle-top-right {
-    top: 8px;
-    right: 8px;
+    top: 8px!important;
+    right: 8px!important;
 }
 .circle-top-left {
-    top: 8px;
-    left: 8px;
+    top: 8px!important;
+    left: 8px!important;
 }
 .circle-bottom-right {
-    bottom: 8px;
-    right: 8px;
+    bottom: 8px!important;
+    right: 8px!important;
 }
 .circle-bottom-left {
-    bottom: 8px;
-    left: 8px;
+    bottom: 8px!important;
+    left: 8px!important;
 }
 
 
@@ -212,7 +212,7 @@
 .todo_header_box{
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) !important;
     background: linear-gradient(rgb(40, 79, 137) , rgb(60, 105, 174) , rgb(74, 117, 182) ,rgb(114, 155, 217)) !important;
-    height: 163px;
+    height: 163px!important;
 }
 .dm_todo_input{
     background-color:rgb(39, 78, 136) !important;
@@ -237,7 +237,7 @@
     border:2px solid rgb(135, 167, 255) !important;
     background-color:rgb(39, 78, 136) !important;
     color: rgb(183, 202, 255) !important;
-    transition-duration: 300ms;
+    transition-duration: 300ms!important;
 }
 .dm_todo_add_button:hover{
     background-color:rgb(23, 48, 86) !important;
@@ -265,8 +265,8 @@
 }
 .todo_item{
     border:2px solid rgb(135, 167, 255) !important;
-    background-color:rgb(39, 78, 136);
-    color: rgb(185, 204, 255);
+    background-color:rgb(39, 78, 136) !important;
+    color: rgb(185, 204, 255) !important;
 }
 
 
