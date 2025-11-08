@@ -89,6 +89,15 @@
     bottom: 8px;
     left: 8px;
 }
+.switch_light_and_dark_mode_button{
+    top: 70px !important;
+    left: 7px !important;
+}
+    
+.offcanvas_open_button{
+    top: 5px !important;
+    left: 7px !important;
+}
 
 
 

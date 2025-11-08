@@ -75,6 +75,15 @@
     background-color:white;
     color: black;
 }
+.switch_light_and_dark_mode_button{
+    top: 70px !important;
+    left: 7px !important;
+}
+    
+.offcanvas_open_button{
+    top: 5px !important;
+    left: 7px !important;
+}
 
 
 
@@ -136,7 +145,17 @@
     }
     .switch_light_and_dark_mode_button{
         top: 50px !important;
-        left: 10px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
     }
 }
 
@@ -148,8 +167,18 @@
         width: 50% !important;
     }
     .switch_light_and_dark_mode_button{
-        top: 75px !important;
-        left: 16px !important;
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
     }
 }
 
@@ -158,8 +187,18 @@
         width: 550px !important;
     }
     .switch_light_and_dark_mode_button{
-        top: 75px !important;
-        left: 16px !important;
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
     }
 }
 
@@ -168,8 +207,18 @@
         width: 630px !important;
     }
     .switch_light_and_dark_mode_button{
-        top: 75px !important;
-        left: 16px !important;
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
     }
 }
 
@@ -178,10 +227,21 @@
         width: 820px !important;
     }
     .switch_light_and_dark_mode_button{
-        top: 75px !important;
-        left: 16px !important;
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
     }
 }
+
 .circle-top-right {
     top: 8px;
     right: 8px;
