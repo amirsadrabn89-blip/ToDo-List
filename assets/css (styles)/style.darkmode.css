@@ -91,12 +91,62 @@
 }
 
 
+
+@media (min-width: 300px) and (max-width: 484px) {
+    .todo_item_style {
+        width: 220px !important;
+    }
+    .offcanvas_help_section{
+        width: 70% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 100% !important;
+    }
+    .input_beside_icon_box{
+        padding:0px !important;
+    }
+    .todo_input::placeholder{
+        font-size: 15px;
+    }
+    .todo_add_button{
+        font-size: 15px !important;
+        padding: 0 !important;
+    }
+    .heading_todo_list{
+        padding: 10px 20px !important;
+    }
+    .todo_header_box{
+        padding: 0 !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+}
+
 @media (min-width: 485px) and (max-width: 549px) {
     .todo_item_style {
         width: 340px !important;
     }
     .offcanvas_help_section{
-    width: 55% !important;
+        width: 55% !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 10px !important;
     }
 }
 
@@ -105,7 +155,11 @@
         width: 370px !important;
     }
     .offcanvas_help_section{
-    width: 50% !important;
+        width: 50% !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
     }
 }
 
@@ -113,11 +167,19 @@
     .todo_item_style {
         width: 550px !important;
     }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
     .todo_item_style {
         width: 630px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
     }
 }
 
@@ -125,6 +187,26 @@
     .todo_item_style {
         width: 820px !important;
     }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
+    }
+}
+.circle-top-right {
+    top: 8px;
+    right: 8px;
+}
+.circle-top-left {
+    top: 8px;
+    left: 8px;
+}
+.circle-bottom-right {
+    bottom: 8px;
+    right: 8px;
+}
+.circle-bottom-left {
+    bottom: 8px;
+    left: 8px;
 }
 
 
@@ -270,7 +352,69 @@
     color: rgb(185, 204, 255);
 }
 
+@media (min-width: 300px) and (max-width: 484px) {
+    .todo_item_style {
+        width: 220px !important;
+    }
+    .offcanvas_help_section{
+        width: 70% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+    }
+    .password_input::placeholder{
+        font-size: 15px !important;
+    }
+    .icon_box_beside_password_input{
+        height: 48px !important;
+    }
+    .password-box{
+        width: 90% !important;
+    }
+    
+}
 
+@media (min-width: 485px) and (max-width: 549px) {
+    .todo_item_style {
+        width: 340px !important;
+    }
+    .offcanvas_help_section{
+        width: 55% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width:80%  ;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+    .todo_item_style {
+        width: 370px !important;
+    }
+    .offcanvas_help_section{
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .todo_item_style {
+        width: 550px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .todo_item_style {
+        width: 630px !important;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .todo_item_style {
+        width: 820px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width:80%  ;
+    }
+}
 
 
 /* password page ................................................................................................................ */

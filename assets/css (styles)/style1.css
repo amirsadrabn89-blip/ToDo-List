@@ -111,6 +111,20 @@
     .todo_header_box{
         padding: 0 !important;
     }
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
 }
 
 @media (min-width: 485px) and (max-width: 549px) {
@@ -119,6 +133,10 @@
     }
     .offcanvas_help_section{
         width: 55% !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 10px !important;
     }
 }
 
@@ -129,11 +147,19 @@
     .offcanvas_help_section{
         width: 50% !important;
     }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .todo_item_style {
         width: 550px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
     }
 }
 
@@ -141,11 +167,19 @@
     .todo_item_style {
         width: 630px !important;
     }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
     .todo_item_style {
         width: 820px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 75px !important;
+        left: 16px !important;
     }
 }
 .circle-top-right {
@@ -202,10 +236,7 @@
 .reset_password_button:hover,.check_reset_password_button:hover {
     background-color: rgb(255, 167, 167) !important;
 }
-.switch_light_and_dark_mode_button{
-    top: 75px !important;
-    left: 16px !important;
-}
+
 
 
 
@@ -231,16 +262,7 @@
     .password-box{
         width: 90% !important;
     }
-    .switch_light_and_dark_mode_button i{
-        font-size: 15px !important;
-    }
-    .offcanvas_open_button i{
-        font-size: 15px !important;
-    }
-    .switch_light_and_dark_mode_button{
-        top: 50px !important;
-        left: 10px !important;
-    }
+    
 }
 
 @media (min-width: 485px) and (max-width: 549px) {
