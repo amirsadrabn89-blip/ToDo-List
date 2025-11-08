@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <!-- bootstrap -->
+<head>
+    <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
         <!-- css -->
-        <link class="web_css_style" rel="stylesheet" href="assets/css (styles)/style1.css">
-
+        <link rel="stylesheet" href="assets/css (styles)/style1.css">
         <link rel="stylesheet" href="assets/packages/sweeetalert/sweetalert2.min.css">
 
         <!-- icons(CDN) -->
@@ -18,121 +16,56 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ToDo list</title>
-    </head>
-
-    <body class="position-relative">
-        
-        <!-- Offcanvas Sidebar -->
-        <div class="offcanvas offcanvas-start offcanvas_help_section" id="demo">
-        <div class="offcanvas-header d-flex justify-content-between">
-            <h1 class="offcanvas-title dm_offcanvas_title">ToDo List</h1>
-            <button type="button" class="btn btn-primary btn-outline-light border-2 fw-semibold dm_offcanvas_close_button" data-bs-dismiss="offcanvas"><i class="ri-arrow-left-s-line fs-4 fw-bold"></i></i></button>
-        </div>
-
-            <div class="offcanvas-body d-flex flex-column mt-4 position-relative pb-5">
-                <div class="dropdown dropdown_help_button">
-                    <button type="button" class="btn btn-outline-primary border-2 rounded-3 dropdown-toggle dm_Help_buttons_dropdown_button" data-bs-toggle="dropdown">Help buttons</button>
-                    <ul class="dropdown-menu px-2 py-3 border-3 border-primary-subtle rounded-4 mt-1 dm_Help_buttons_dropdown_box">
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-primary px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-play-circle-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning you are doing item</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-success px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-checkbox-circle-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning you did item</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-info px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-restart-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning refresh item to first mood</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-secondary px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-edit-2-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning edit item</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-danger px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-delete-bin-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning delete item</span></span></li>
-                    </ul>
-                </div>
-                
-                <div class="mt-5 text-center position-absolute delete_all_item_box">
-                    <hr class="my-2">
-                    <span class="fs-6 fw-semibold text-dark-emphasis dm_remove_all_item_text">
-                        Do you want to remove all of your items?
-                        <br>
-                        Click this button.
-                    </span>
-                    <div class="d-flex justify-content-center mt-2">
-                            
-                        <button class=" btn btn-danger bg-danger-subtle p-1 mt-1 ms-2 rounded-3 border-2 w-50 shadow delete_all_item_button dm_delete_all_item_button" onclick="todo_clear_button()" type="button">
-                            <i class="ri-delete-bin-line fs-5 text-danger px-1 dm_delete_all_item_button_text"></i>
-                            <p class="text-danger delete_all_item_text mb-0 dm_delete_all_item_button_text">Delete all items</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-info-subtle d-flex flex-column justify-content-center align-items-start px-1 py-2 mx-3 mb-2 rounded-4 border border-2 border-primary position-absolute bottom-0 start-0 dm_user_and_setting_box" style="width: 90%;">
-                <div class="">
-                    <button class="btn border-0 mb-1 p-0 px-3 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
-                        <i class="ri-shield-user-line text-primary fs-4 dm_user_and_setting_text"></i>
-                        <span class="text-primary fs-6 fw-semibold ms-2 dm_user_and_setting_text">User information</span>
-                    </button>
-                </div>
-                <div class="">
-                    <button class="btn border-0 p-0 px-3 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
-                        <i class="ri-settings-5-line text-primary fs-4 dm_user_and_setting_text"></i>
-                        <span class="text-primary fs-6 fw-semibold ms-2 dm_user_and_setting_text">Setting</span>
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Button to open the offcanvas sidebar -->
-        <button class="btn btn-primary btn-outline-light border-2 fw-semibold mt-3 ms-3 position-absolute top-0 start-0 dm_offcanvas_open_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-            <i class="ri-arrow-right-s-line fs-4"></i>
-        </button>
-
-
-        <div class="py-1 background-screen d-flex">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-12 col-lg-10 col-xl-9">
-                        <div class="d-flex justify-content-center">
-                            <h1 class="text-center fw-bold text-primary d-inline-block my-3 p-3 px-5 bg-light border border-4 border-primary rounded-5 heading_todo_list dm_heading_todo_list"> ToDo List </h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List password page</title>
+</head>
+<body class="password_page_body d-flex align-items-center justify-content-center m-0 p-0">
+    
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-md-12 col-lg-10 col-xl-9 py-5 my-5 d-flex justify-content-center">
+                    <div class="border border-4 border-primary rounded-5 shadow-lg p-3 w-75 d-flex flex-column align-items-center position-relative password-box">
+                        <h1 class="my-4">ToDo List</h1>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-center align-items-center p-1 px-2 rounded-0 rounded-start-4 shadow border border-2 border-end-0 border-primary bg-info-subtle "><i class="ri-lock-2-line text-primary fs-4"></i></div>
+                            <input type="password" class="rubic_font todo_input form-control rounded-0 rounded-end-4 shadow border border-3 border-primary my-3 fs-5 password_input" type="text" placeholder="Enter your password">
                         </div>
-                        <div class="border border-4 border-primary rounded-5 bg-light  shadow-lg dm_todo_list_big_box">
+                        <div>
+                            <button class="border border-2 border-success rounded-4 bg-danger-success shadow-lg mt-2 px-3 py-2" id="enter_button">
+                                <span class="fw-semibold small">Enter</span>
+                            </button>
+                        </div>
+                        <div class="error_password_box mt-2" style="height: 30px;">
+                            <!-- [...] -->
+                        </div>
+                        <div class="w-75 border border-1 border-secondary mb-2 mt-3"></div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <button class="border border-2 border-danger rounded-4 bg-danger-subtle shadow-lg mt-2 px-3 reset_password_button">
+                                <span class="fw-semibold small">Reset the password</span>
+                            </button>
                             
-                            <div class="todo_header_box d-flex justify-content-center p-3 py-5 rounded-top-5 bg-light shadow position-relative dm_todo_header_box">
-                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-right dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
-                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-left dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
-
-                                <div class="border border-2 border-primary rounded-4 d-flex justify-content-center w-75 py-2 dm_todo_input_and_add_button_border_box">
-                                    <div class="w-100 ms-2">
-                                        <div class="d-flex justify-content-center">
-                                            <div class="d-flex justify-content-center align-items-center p-1 px-3 rounded-0 rounded-start-4 shadow border border-2 border-end-0 border-primary bg-info-subtle dm_input_beside_icon_box"><i class="ri-todo-line text-primary fs-4"></i></div>
-                                            <input class="rubic_font todo_input form-control rounded-0 rounded-end-4 shadow border border-2 border-primary fs-5 dm_todo_input" type="text" placeholder="task to be done">
-                                        </div>
-                                        <span class="empty_input_error text-danger d-none mt-3 ms-2 dm_empty_input_error">!!! please fill in this field.</span>
-                                    </div>
-                                    <button class="todo_add_button btn btn-primary mx-2 rounded-4 shadow border border-2 border-light fs-5 dm_todo_add_button" style="width: 70px; height: 45px;" type="button">add</button>
-                                </div>
-                            </div>
-                            
-                            <div class="list_box d-flex justify-content-center py-3 rounded-bottom-5 border-bottom border-3 border-primary bg-light overflow-y-auto mb-5 dm_list_box" style="height: 400px;">
-                                <ul class="todo_list list-unstyled">
-                                    
-                                </ul>
-                            </div>
-                            <div class="position-relative">
-                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-bottom-right dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
-                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-bottom-left dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                            <div class="rounded-4 shadow border border-3 border-danger p-1 pt-4 mt-2 d-none flex-column justify-content-center align-items-center bg-light reset_password_input_box position-relative">
+                                <div class="position-absolute top-0 end-0"><button class="btn btn-close-white p-0 px-1 mb-1 close_reset_box"><i class="ri-close-line fs-4 text-danger"></i></button></div>
+                                <input class=" form-control rubic_font todo_input form-control mt-3 rounded-4 shadow border border-2 border-danger bg-danger-subtle fs-5 reset_password_input" type="text" placeholder="Enter your text">
+                                <button class="border border-2 border-danger rounded-4 bg-danger-subtle shadow-lg mt-2 px-5 check_reset_password_button">
+                                    <span class="fw-semibold small">Done</span>
+                                </button>
                             </div>
                         </div>
+                        
+                        <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-bottom-right "><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                        <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-bottom-left"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                        
+                        <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-right"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                        <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-left"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+
                     </div>
                 </div>
             </div>
         </div>
-
-        <button class="btn btn-primary btn-outline-light border-2 fw-semibold position-absolute switch_light_and_dark_mode_button d-flex flex-column" type="button">
-            <i class="ri-sun-line fs-4 switch_light_mode_icon"></i>
-            <i class="ri-moon-line fs-4 switch_dark_mode_icon"></i>
-        </button>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/javascript/index.js"></script>
-    </body>
+    
+    
+    <script src="assets/javascript/password-page.js"></script>
+</body>
 </html>
