@@ -26,7 +26,7 @@ reset_password_input.addEventListener('keydown', function(event) {
 enter_button.addEventListener('click', function() {
     let password_input_value = password_input.value.trim();
     if (password_input_value === 'todo') {
-        window.location.href = "index.html";
+        window.location.href = "home page.html";
     } else {
         error_password_box.textContent = "The password is incorrect !";
         error_password_box.style.color = "red";
@@ -46,7 +46,7 @@ check_reset_password_button.addEventListener('click' , function(){
     let reset_password_input_value = reset_password_input.value.trim();
     if (reset_password_input_value === 'todo') {
         reset_password_input_value = "."
-        window.location.href = "index.html";
+        window.location.href = "home page.html";
     } else {
         error_password_box.textContent = "The password is incorrect !";
         error_password_box.style.color = "red";

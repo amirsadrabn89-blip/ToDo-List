@@ -66,13 +66,13 @@
                 <div class="">
                     <button class="btn border-0 mb-1 p-0 px-3 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
                         <i class="ri-shield-user-line text-primary fs-4 dm_user_and_setting_text"></i>
-                        <span class="text-primary fs-6 fw-semibold ms-2 dm_user_and_setting_text">User information</span>
+                        <span class="text-primary fs-6 fw-semibold dm_user_and_setting_text">User information</span>
                     </button>
                 </div>
                 <div class="">
                     <button class="btn border-0 p-0 px-3 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
                         <i class="ri-settings-5-line text-primary fs-4 dm_user_and_setting_text"></i>
-                        <span class="text-primary fs-6 fw-semibold ms-2 dm_user_and_setting_text">Setting</span>
+                        <span class="text-primary fs-6 fw-semibold dm_user_and_setting_text">Setting</span>
                     </button>
                 </div>
             </div>
@@ -80,7 +80,7 @@
         </div>
 
         <!-- Button to open the offcanvas sidebar -->
-        <button class="btn btn-primary btn-outline-light border-2 fw-semibold mt-3 ms-3 position-absolute top-0 start-0 dm_offcanvas_open_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+        <button class="btn btn-primary btn-outline-light border-2 fw-semibold mt-3 ms-3 position-absolute top-0 start-0 dm_offcanvas_open_button offcanvas_open_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
             <i class="ri-arrow-right-s-line fs-4"></i>
         </button>
 
@@ -94,14 +94,14 @@
                         </div>
                         <div class="border border-4 border-primary rounded-5 bg-light  shadow-lg dm_todo_list_big_box">
                             
-                            <div class="todo_header_box d-flex justify-content-center p-3 py-5 rounded-top-5 bg-light shadow position-relative dm_todo_header_box">
+                            <div class="todo_header_box d-flex justify-content-center align-items-center p-3 py-5 rounded-top-5 bg-light shadow position-relative dm_todo_header_box todo_header_box">
                                 <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-right dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
                                 <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-left dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
 
-                                <div class="border border-2 border-primary rounded-4 d-flex justify-content-center w-75 py-2 dm_todo_input_and_add_button_border_box">
+                                <div class="border border-2 border-primary rounded-4 d-flex justify-content-center w-75 py-2 dm_todo_input_and_add_button_border_box todo_input_and_add_button_border_box">
                                     <div class="w-100 ms-2">
                                         <div class="d-flex justify-content-center">
-                                            <div class="d-flex justify-content-center align-items-center p-1 px-3 rounded-0 rounded-start-4 shadow border border-2 border-end-0 border-primary bg-info-subtle dm_input_beside_icon_box"><i class="ri-todo-line text-primary fs-4"></i></div>
+                                            <div class="d-flex justify-content-center align-items-center py-1 px-3 rounded-0 rounded-start-4 shadow border border-2 border-end-0 border-primary bg-info-subtle dm_input_beside_icon_box input_beside_icon_box"><i class="ri-todo-line text-primary fs-4 mx-1"></i></div>
                                             <input class="rubic_font todo_input form-control rounded-0 rounded-end-4 shadow border border-2 border-primary fs-5 dm_todo_input" type="text" placeholder="task to be done">
                                         </div>
                                         <span class="empty_input_error text-danger d-none mt-3 ms-2 dm_empty_input_error">!!! please fill in this field.</span>

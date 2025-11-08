@@ -40,7 +40,7 @@
 }
 .todo_item_buttons_box{
     height: 50px;
-    left: -250px;
+    left: -247px;
 }
 .offcanvas_help_section{
     background: linear-gradient(rgb(179, 221, 255) , rgba(199, 221, 255, 0.9) , rgba(199, 230, 255, 0.8) , rgba(203, 224, 255, 0.6)) !important;
@@ -77,12 +77,48 @@
 }
 
 
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 484px) {
+    .todo_item_style {
+        width: 220px !important;
+    }
+    .offcanvas_help_section{
+        width: 70% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 100% !important;
+    }
+    .input_beside_icon_box{
+        padding:0px !important;
+    }
+    .todo_input::placeholder{
+        font-size: 15px;
+    }
+    .todo_add_button{
+        font-size: 15px !important;
+        padding: 0 !important;
+    }
+    .heading_todo_list{
+        padding: 10px 20px !important;
+    }
+    .todo_header_box{
+        padding: 0 !important;
+    }
+}
+
 @media (min-width: 485px) and (max-width: 549px) {
     .todo_item_style {
         width: 340px !important;
     }
     .offcanvas_help_section{
-    width: 55% !important;
+        width: 55% !important;
     }
 }
 
@@ -91,7 +127,7 @@
         width: 370px !important;
     }
     .offcanvas_help_section{
-    width: 50% !important;
+        width: 50% !important;
     }
 }
 
@@ -169,4 +205,82 @@
 .switch_light_and_dark_mode_button{
     top: 75px !important;
     left: 16px !important;
+}
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 484px) {
+    .todo_item_style {
+        width: 220px !important;
+    }
+    .offcanvas_help_section{
+        width: 70% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+    }
+    .password_input::placeholder{
+        font-size: 15px !important;
+    }
+    .icon_box_beside_password_input{
+        height: 48px !important;
+    }
+    .password-box{
+        width: 90% !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 10px !important;
+    }
+}
+
+@media (min-width: 485px) and (max-width: 549px) {
+    .todo_item_style {
+        width: 340px !important;
+    }
+    .offcanvas_help_section{
+        width: 55% !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width:80%  ;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+    .todo_item_style {
+        width: 370px !important;
+    }
+    .offcanvas_help_section{
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .todo_item_style {
+        width: 550px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .todo_item_style {
+        width: 630px !important;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .todo_item_style {
+        width: 820px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width:80%  ;
+    }
 }
