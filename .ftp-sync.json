@@ -1,0 +1,11 @@
+{
+    "host": "cp105.mihanwebhost.com",
+    "protocol": "ftps",
+    "port": 21,
+    "username": "amirsadra.bn89@todotasks.ir",
+    "password": "Asb@6041185342",
+    "remotePath": "/public_html/",
+    "uploadOnSave": true,
+    "passive": true,
+    "debug": true
+}
