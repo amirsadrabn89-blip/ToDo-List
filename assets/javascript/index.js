@@ -95,6 +95,7 @@ switch_light_and_dark_mode_button.addEventListener('click', function () {
 function remove_item_button(button){
     let item = button.closest('li')
     item.remove()
+    
     saveTodos();
 }
 
@@ -105,6 +106,11 @@ function check_item_button(button){
     item.classList.add('bg-success-subtle' , 'border-success' , 'text-success')
 
     item.querySelector('p').classList.add('text-decoration-line-through')
+
+    let buttons_box = item.querySelector('.todo_item_buttons_box');
+    buttons_box.classList.remove('d-flex');
+    buttons_box.classList.add('d-none');
+    
     saveTodos();    
 }
 
@@ -114,6 +120,11 @@ function doing_item_button(button){
     item.classList.remove('bg-light' , 'border-secondary-subtle' , 'bg-success-subtle' , 'border-success' , 'text-success')
     item.classList.add('bg-primary-subtle' , 'border-primary' , 'text-primary')
     item.querySelector('p').classList.remove('text-decoration-line-through')
+
+    let buttons_box = item.querySelector('.todo_item_buttons_box');
+    buttons_box.classList.remove('d-flex');
+    buttons_box.classList.add('d-none');
+
     saveTodos();
 }
 
@@ -125,6 +136,11 @@ function edit_item_button(button){
 
     if (new_text && new_text.trim() !== "") {
         item_text.textContent = new_text;
+
+        let buttons_box = item.querySelector('.todo_item_buttons_box');
+        buttons_box.classList.remove('d-flex');
+        buttons_box.classList.add('d-none');
+
         saveTodos();
     }
 }
@@ -135,6 +151,11 @@ function refresh_item_button(button){
     item.classList.remove('bg-success-subtle' , 'border-success' , 'text-success' , 'bg-primary-subtle' , 'border-primary' , 'text-primary')
     item.classList.add('border-secondary-subtle')
     item.querySelector('p').classList.remove('text-decoration-line-through')
+    
+    let buttons_box = item.querySelector('.todo_item_buttons_box');
+    buttons_box.classList.remove('d-flex');
+    buttons_box.classList.add('d-none');
+
     saveTodos();  
 }
 
@@ -171,6 +192,8 @@ swalWithBootstrapButtons.fire({
 });
 
 }
+
+    
 
 // more_box_button
 function more_box_button(button) {
