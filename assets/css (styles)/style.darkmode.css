@@ -63,8 +63,6 @@
     font-family: "Rubik", sans-serif;
 }
 .switch_light_and_dark_mode_button{
-    top: 75px !important;
-    left: 16px !important;
     border:2px solid rgb(183, 202, 255) !important;
     background-color: rgb(0, 92, 168) !important;
     color: rgb(214, 225, 255) !important;
@@ -89,21 +87,12 @@
     bottom: 8px;
     left: 8px;
 }
-.switch_light_and_dark_mode_button{
-    top: 70px !important;
-    left: 7px !important;
-}
-    
-.offcanvas_open_button{
-    top: 5px !important;
-    left: 7px !important;
-}
-
 
 
 @media (min-width: 300px) and (max-width: 484px) {
-    .todo_item_style {
-        width: 220px !important;
+    .todo_item{
+        padding:2px 0 !important;
+        width: 300px !important;
     }
     .offcanvas_help_section{
         width: 70% !important;
@@ -111,8 +100,19 @@
     .todo_input_and_add_button_border_box{
         width: 90% !important;
     }
+    .password_input::placeholder{
+        font-size: 15px !important;
+    }
+    .todo_item_style {
+        width: 220px !important;
+        font-size: 15px !important;
+    }
+    .offcanvas_help_section{
+        width: 70% !important;
+    }
     .todo_input_and_add_button_border_box{
-        width: 100% !important;
+        width: 90% !important;
+        padding: 3px 0 !important;
     }
     .input_beside_icon_box{
         padding:0px !important;
@@ -123,16 +123,19 @@
     .todo_add_button{
         font-size: 15px !important;
         padding: 0 !important;
+        width:55px !important ;
+        height:38px !important ;
     }
     .heading_todo_list{
         padding: 10px 20px !important;
     }
     .todo_header_box{
         padding: 0 !important;
+        height: 130px !important;
     }
     .switch_light_and_dark_mode_button{
-        top: 50px !important;
-        left: 7px !important;
+        top: 5px !important;
+        right: 7px !important;
     }
     .switch_light_and_dark_mode_button i{
         font-size: 15px !important;
@@ -144,11 +147,38 @@
         top: 5px !important;
         left: 7px !important;
     }
+    .todo_list_big_box{
+        height:85vh ;
+    }
+    .todo_item_buttons_box{
+        height: 37px !important;
+        padding: 0 !important;
+        left: -168px !important;
+    }
+    .todo_item_buttons_box button{
+        width: 30px !important;
+        height: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 1px !important;
+    }
+    .todo_item_buttons_box button i{
+        font-size: 15px !important;
+    }
+    .todo_item_more_buttons_box{
+        width: 35px !important;
+        height: 35px;
+    }
+    .more_box_button{
+        width: 30px !important;
+        height: 30px !important;
+    }
 }
 
 @media (min-width: 485px) and (max-width: 549px) {
-    .todo_item_style {
-        width: 340px !important;
+    .todo_item {
+        width: 400px !important;
     }
     .offcanvas_help_section{
         width: 55% !important;
@@ -170,8 +200,8 @@
 }
 
 @media (min-width: 550px) and (max-width: 767px) {
-    .todo_item_style {
-        width: 370px !important;
+    .todo_item {
+        width: 480px !important;
     }
     .offcanvas_help_section{
         width: 50% !important;
@@ -193,8 +223,8 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .todo_item_style {
-        width: 550px !important;
+    .todo_item {
+        width: 650px !important;
     }
     .switch_light_and_dark_mode_button{
         top: 50px !important;
@@ -213,8 +243,8 @@
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
-    .todo_item_style {
-        width: 630px !important;
+    .todo_item {
+        width: 730px !important;
     }
     .switch_light_and_dark_mode_button{
         top: 50px !important;
@@ -233,8 +263,8 @@
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
-    .todo_item_style {
-        width: 820px !important;
+    .todo_item {
+        width: 920px !important;
     }
     .switch_light_and_dark_mode_button{
         top: 50px !important;
@@ -249,6 +279,28 @@
     .offcanvas_open_button{
         top: 5px !important;
         left: 7px !important;
+    }
+}
+
+@media (min-width: 1499px) {
+    .todo_item {
+        width: 920px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 70px !important;
+        left: 7px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .todo_item_more_buttons_box{
+        width: 45px !important;
+        height: 45px !important;
+    }
+    .more_box_button{
+        width: 35px !important;
+        height: 35px !important;
     }
 }
 
@@ -275,15 +327,15 @@
 .dm_remove_all_item_text{
     color: rgb(215, 215, 215) !important;
 }
-.dm_Help_buttons_dropdown_button{
+.dm_Help_buttons_button{
     color: rgb(183, 202, 255) !important;
     border: 2px solid rgb(183, 202, 255) !important;
 }
-.dm_Help_buttons_dropdown_box{
+.dm_Help_buttons_box{
     background-color: rgb(0, 92, 168) !important;
 }
-.dm_Help_buttons_dropdown_text{
-    color:  rgb(215, 215, 215) !important;
+.dm_Help_buttons_text{
+    color:  rgb(0, 92, 168) !important;
 }
 .dm_offcanvas_title{
     color:rgb(183, 202, 255) !important ;
@@ -352,6 +404,20 @@
 .dm_list_box{
     background: linear-gradient(rgb(40, 79, 137) , rgb(60, 105, 174) , rgb(74, 117, 182) ,rgb(114, 155, 217)) !important;
 }
+.dm_list_box {
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+}
+.dm_list_box::-webkit-scrollbar{
+    width: 10px !important;
+}
+.dm_list_box::-webkit-scrollbar-track {
+    background: #b9cdff;
+}
+.dm_list_box::-webkit-scrollbar-thumb {
+    background: #576997;
+    border-radius: 10px;
+}
 .todo_header_box{
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) !important;
     background: linear-gradient(rgb(40, 79, 137) , rgb(60, 105, 174) , rgb(74, 117, 182) ,rgb(114, 155, 217)) !important;
@@ -412,69 +478,726 @@
     color: rgb(185, 204, 255);
 }
 
+
+
+
 @media (min-width: 300px) and (max-width: 484px) {
-    .todo_item_style {
-        width: 220px !important;
+    .todo_item{
+        padding:2px 0 !important;
+        width: 300px !important;
     }
     .offcanvas_help_section{
         width: 70% !important;
     }
     .todo_input_and_add_button_border_box{
         width: 90% !important;
+        padding: 3px 0 !important;
     }
-    .password_input::placeholder{
+    .todo_item_style{
         font-size: 15px !important;
     }
-    .icon_box_beside_password_input{
-        height: 48px !important;
+    .offcanvas_help_section{
+        width: 70% !important;
     }
-    .password-box{
-        width: 90% !important;
+    .input_beside_icon_box{
+        padding:0px !important;
     }
-    
+    .todo_input{
+        font-size: 15px !important;
+    }
+    .todo_input::placeholder{
+        font-size: 15px !important;
+    }
+    .todo_add_button{
+        font-size: 15px !important;
+        padding: 0 !important;
+        width:55px !important ;
+        height:38px !important ;
+    }
+    .heading_todo_list{
+        padding: 10px 20px !important;
+    }
+    .todo_header_box{
+        padding: 0 !important;
+        height: 130px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 5px !important;
+        right: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .todo_list_big_box{
+        height:85vh  !important;
+    }
+    .todo_item_buttons_box{
+        height: 37px !important;
+        padding: 0 !important;
+        left: -168px !important;
+    }
+    .todo_item_buttons_box button{
+        width: 30px !important;
+        height: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 1px !important;
+    }
+    .todo_item_buttons_box button i{
+        font-size: 15px !important;
+    }
+    .todo_item_more_buttons_box{
+        width: 35px !important;
+        height: 35px;
+    }
+    .more_box_button{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .remove_all_item_text{
+        font-size: 13px !important;
+    }
+    .delete_all_item_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
 }
 
 @media (min-width: 485px) and (max-width: 549px) {
-    .todo_item_style {
-        width: 340px !important;
+    .todo_item {
+        width: 400px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+        padding: 3px 0 !important;
+    }
+    .input_beside_icon_box{
+        padding:0px !important;
+        height: 40px;
+    }
+    .todo_input{
+        font-size: 15px !important;
+        height: 40px;
+    }
+    .todo_input::placeholder{
+        font-size: 15px !important;
+    }
+    .todo_add_button{
+        font-size: 15px !important;
+        padding: 0 !important;
+        width:55px !important ;
+        height:38px !important ;
+    }
+    .heading_todo_list{
+        padding: 10px 20px !important;
+    }
+    .todo_header_box{
+        padding: 0 !important;
+        height: 130px !important;
     }
     .offcanvas_help_section{
         width: 55% !important;
     }
-    .todo_input_and_add_button_border_box{
-        width:80%  ;
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+        .remove_all_item_text{
+        font-size: 13px !important;
+    }
+    .delete_all_item_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
     }
 }
 
 @media (min-width: 550px) and (max-width: 767px) {
-    .todo_item_style {
-        width: 370px !important;
+    .todo_item {
+        width: 480px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+        padding: 3px 0 !important;
     }
     .offcanvas_help_section{
         width: 50% !important;
     }
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+        .remove_all_item_text{
+        font-size: 13px !important;
+    }
+    .delete_all_item_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .todo_item_style {
-        width: 550px !important;
+    .todo_item {
+        width: 650px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+        padding: 3px 0 !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 50px !important;
+        left: 7px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 15px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+        .remove_all_item_text{
+        font-size: 15px !important;
+    }
+    .delete_all_item_text{
+        font-size: 15px !important;
+    }
+    .user_and_setting_text{
+        font-size: 15px !important;
+    }
+    .user_and_setting_text{
+        font-size: 15px !important;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
-    .todo_item_style {
-        width: 630px !important;
+    .todo_item {
+        width: 730px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .switch_light_and_dark_mode_button i{
+        font-size: 25px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 25px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 70px !important;
+        left: 7px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
     }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
-    .todo_item_style {
-        width: 820px !important;
+    .todo_item {
+        width: 920px !important;
+        padding: 5px 0 2px 2px !important;
     }
-    .todo_input_and_add_button_border_box{
-        width:80%  ;
+    .switch_light_and_dark_mode_button i{
+        font-size: 25px !important;
+    }
+    .offcanvas_open_button i{
+        font-size: 25px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 70px !important;
+        left: 7px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
     }
 }
 
+@media (min-width: 1499px) {
+    .todo_item {
+        width: 920px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 70px !important;
+        left: 7px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .todo_item_more_buttons_box{
+        width: 45px !important;
+        height: 45px !important;
+        margin-bottom: 5px !important;
+    }
+    .more_box_button{
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
 
-/* password page ................................................................................................................ */
+/* personal-dashboard-page ................................................................................................................ */
+
+
+.personal-dashboard-box{
+    background: linear-gradient(rgb(40, 79, 137) , rgb(60, 105, 174) , rgb(74, 117, 182) ,rgb(114, 155, 217)) !important;
+}
+.personal-dashboard-inner-box{
+    background: linear-gradient(rgb(40, 79, 137) , rgb(60, 105, 174)) !important;
+}
+.personal-dashboard-section-outer-box{
+    background: linear-gradient(rgb(117, 146, 190) , rgb(176, 208, 255)) !important;
+}
+.personal-dashboard-section{
+    background: linear-gradient(rgb(117, 146, 190) , rgb(176, 208, 255)) !important;
+    max-height: 60vh !important;
+    overflow-y: auto !important;
+}
+.personal-dashboard-section::-webkit-scrollbar{
+    width: 10px !important;
+}
+.personal-dashboard-section::-webkit-scrollbar-track {
+    background: #b9cdff;
+}
+.personal-dashboard-section::-webkit-scrollbar-thumb {
+    background: #576997;
+    border-radius: 10px;
+}
+.back_to_home_page_button{
+    top: 5px !important;
+    left: 7px !important;
+    border:2px solid rgb(183, 202, 255) !important;
+    background-color: rgb(0, 92, 168) !important;
+    color: rgb(214, 225, 255) !important;
+    transition-duration: 300ms;
+}
+.back_to_home_page_button:hover{
+    background-color: rgb(0, 60, 109) !important;
+}
+.personal_dashboard_page_title{
+    color: rgb(183, 202, 255) !important;
+}
+.personal-dashboard-section-title-color{
+    color: rgb(224, 232, 255) !important;
+}
+.personal-dashboard-section-outer-box{
+    border:4px solid rgb(135, 167, 255) !important;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 484px) {
+    .personal_dashboard_section_title{
+        color: #1e3b7e !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #2b4179 !important;
+        font-size: 14px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 55% !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 55% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 55% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_birthday_input{
+        padding: 5px !important;
+        font-size: 13px !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        border-radius: 10px !important;
+        color: #071434 !important;
+        width: 50% !important;
+        transition: 0.3s !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 50% !important;
+    }
+    .Help_buttons_box{
+        margin-left: 30px !important;
+    }
+    .Help_buttons_text{
+        font-size: 13px !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 11px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45% !important;
+        background-color:rgb(170, 197, 238) !important;
+        border:1px solid rgb(56, 82, 151) !important;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px !important;
+    }
+}
+
+@media (min-width: 485px) and (max-width: 549px) {
+    .personal_dashboard_section_title{
+        color: #1e3b7e !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #2b4179 !important;
+        font-size: 15px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 35% !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 70% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 70% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 33% !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 13px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45% !important;
+        background-color:rgb(170, 197, 238) !important;
+        border:1px solid rgb(56, 82, 151) !important;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px !important;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+    .personal_dashboard_section_title{
+        color: #1e3b7e !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #2b4179 !important;
+        font-size: 17px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 35% !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 60% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 60% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 35% !important;
+    } 
+    
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 13px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45% !important;
+        background-color:rgb(170, 197, 238) !important;
+        border:1px solid rgb(56, 82, 151) !important;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px !important;
+        margin-right: 5px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .personal_dashboard_section_title{
+        color: #1e3b7e !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #2b4179 !important;
+        font-size: 18px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 28% !important;
+        margin-left: 20px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 50% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 50% !important;
+        font-size: 12px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 28% !important;
+        margin-left: 20px !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 14px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45% !important;
+        background-color:rgb(170, 197, 238) !important;
+        border:1px solid rgb(56, 82, 151) !important;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px !important;
+        margin-right: 5px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .personal_dashboard_section_title{
+        color: #1e3b7e !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #2b4179 !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        width:25% !important;
+        margin-left: 30px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 45% !important;
+        font-size: 14px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 45% !important;
+        font-size: 14px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width:25% !important;
+        margin-left: 30px !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45% !important;
+        background-color:rgb(170, 197, 238) !important;
+        border:1px solid rgb(56, 82, 151) !important;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px !important;
+        margin-right: 5px !important;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .personal_dashboard_section_title{
+        color: #1e3b7e !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #2b4179 !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 20% !important;
+        margin-left: 40px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 30px !important;
+        width: 40% !important;
+        font-size: 16px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 40% !important;
+        font-size: 16px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 20% !important;
+        margin-left: 40px !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45% !important;
+        background-color:rgb(170, 197, 238) !important;
+        border:1px solid rgb(56, 82, 151) !important;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px !important;
+        margin-right: 5px !important;
+    }
+}
+
+@media (min-width: 1499px) {
+    .personal_dashboard_section_title{
+        color: #1e3b7e !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #2b4179 !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 23% !important;
+        margin-left: 60px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 33px !important;
+        width: 40% !important;
+        font-size: 17px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 40% !important;
+        font-size: 17px !important;
+        background-color:rgb(102, 148, 216) !important;
+        border:2px solid rgb(56, 82, 151) !important;
+        color: #071434 !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 23% !important;
+        margin-left: 60px !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 15px !important;
+    }.personal_dashboard_section_gender_lable{
+        width: 45% !important;
+        background-color:rgb(170, 197, 238) !important;
+        border:1px solid rgb(56, 82, 151) !important;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px !important;
+        margin-right: 5px !important;
+    }
+}

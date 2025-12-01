@@ -1,85 +1,98 @@
 /* index page ................................................................................................................ */
 
 .background-screen{
-    background-image:linear-gradient(rgba(61, 168, 255 , 0.7) , rgba(30, 154, 255 , 0.7) , rgba(0, 102, 255 , 0.7) , rgba(0, 64, 255 , 0.7) , rgba(0, 64, 255 , 0.7) , rgba(0, 102, 255 , 0.7) , rgba(30, 154, 255 , 0.7) , rgba(61, 168, 255 , 0.7)) , url(../images/to-do-list-seamless-pattern-background-business-flat-illustration-checklist-task-list-s.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+    background-image:linear-gradient(rgba(61, 168, 255 , 0.7) , rgba(30, 154, 255 , 0.7) , rgba(0, 102, 255 , 0.7) , rgba(0, 64, 255 , 0.7) , rgba(0, 64, 255 , 0.7) , rgba(0, 102, 255 , 0.7) , rgba(30, 154, 255 , 0.7) , rgba(61, 168, 255 , 0.7)) , url(../images/to-do-list-seamless-pattern-background-business-flat-illustration-checklist-task-list-s.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .setting_and_user_button{
-    transition-duration: 300ms;
-    border: 2px solid rgba(255, 255, 255, 0) !important;
+    transition-duration: 300ms !important;
+    border: 3px solid rgba(188, 212, 253 , 0.4) !important;
 }
 .setting_and_user_button:hover{
     background-color: rgb(188, 212, 253) !important;
-    border: 2px solid rgb(42, 116, 255) !important;
+    border: 3px solid rgb(133, 175, 255) !important;
 }
 .setting_box{
-    width: 10px;
+    width: 10px !important;
 }
 .todo_header_box{
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
-    background: linear-gradient(rgba(55, 165, 255, 0.7) , rgba(182, 202, 255, 0.7) , rgba(149, 207, 255, 0.7) , rgba(219, 236, 255, 0.7));
-    height: 163px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) !important;
+    background: linear-gradient(rgba(55, 165, 255, 0.7) , rgba(182, 202, 255, 0.7) , rgba(149, 207, 255, 0.7) , rgba(219, 236, 255, 0.7)) !important;
+    height: 163px !important;
 }
 .list_box , .heading_todo_list{
-    background: linear-gradient(rgba(78, 175, 255, 0.7) , rgba(149, 178, 255, 0.7) , rgba(185, 224, 255, 0.7) , rgba(219, 233, 255, 0.7));
+    background: linear-gradient(rgba(78, 175, 255, 0.7) , rgba(149, 178, 255, 0.7) , rgba(185, 224, 255, 0.7) , rgba(219, 233, 255, 0.7)) !important;
 }
+
+.list_box {
+    max-height: 50vh !important;
+    overflow-y: auto !important;
+}
+.list_box::-webkit-scrollbar{
+    width: 10px !important;
+}
+.list_box::-webkit-scrollbar-track {
+    background: #b9cdff;
+}
+.list_box::-webkit-scrollbar-thumb {
+    background: #6d84be;
+    border-radius: 10px;
+}
+
+
 .todo_item_span_count{
-    width:20px ;
-    height:20px ;
+    width:20px  !important;
+    height:20px  !important;
 }
 .todo_item_style{
-    width: 820px;
-    word-wrap: break-word;
-    display: inline-block;
+    width: 820px !important;
+    word-wrap: break-word !important;
+    display: inline-block !important;
 }
 .todo_item_buttons_box{
-    height: 50px;
-    left: -247px;
+    height: 50px !important;
+    left: -247px !important;
 }
 .offcanvas_help_section{
     background: linear-gradient(rgb(179, 221, 255) , rgba(199, 221, 255, 0.9) , rgba(199, 230, 255, 0.8) , rgba(203, 224, 255, 0.6)) !important;
 }
 .delete_all_item_box{
-    bottom: 150px;
-    left: 10%;
-    right: 10%;
+    bottom: 150px !important;
+    left: 10% !important;
+    right: 10% !important;
 }
 .help_button_box_button i{
-    transition-duration: 200ms;
-    top: 7px;
-    right:7px;
+    transition-duration: 200ms !important;
+    top: 7px !important;
+    right:7px !important;
 }
 .help_button_box_button:hover i{
-    top: 9px;
-    right:7px;
-    font-weight: bolder;
+    top: 9px !important;
+    right:7px !important;
+    font-weight: bolder !important;
 }
 .delete_all_item_button{
-    transition-duration: 300ms;
+    transition-duration: 300ms !important;
 }
 .delete_all_item_button:hover{
     background-color: rgb(255, 175, 175) !important;
 }
 
 .rubic_font{
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik", sans-serif !important;
 }
 .todo_item{
     border:2px solid rgb(209, 209, 209);
     background-color:white;
     color: black;
 }
-.switch_light_and_dark_mode_button{
-    top: 70px !important;
-    left: 7px !important;
-}
-    
+
 .offcanvas_open_button{
     top: 5px !important;
     left: 7px !important;
@@ -88,41 +101,49 @@
 
 
 
-
-
-
 @media (min-width: 300px) and (max-width: 484px) {
-    .todo_item_style {
-        width: 220px !important;
+    .todo_item{
+        padding:2px 0 !important;
+        width: 300px !important;
     }
     .offcanvas_help_section{
         width: 70% !important;
     }
     .todo_input_and_add_button_border_box{
         width: 90% !important;
+        padding: 3px 0 !important;
     }
-    .todo_input_and_add_button_border_box{
-        width: 100% !important;
+    .todo_item_style{
+        font-size: 15px !important;
+    }
+    .offcanvas_help_section{
+        width: 70% !important;
     }
     .input_beside_icon_box{
         padding:0px !important;
     }
+    .todo_input{
+        font-size: 15px !important;
+    }
     .todo_input::placeholder{
-        font-size: 15px;
+        font-size: 15px !important;
     }
     .todo_add_button{
         font-size: 15px !important;
         padding: 0 !important;
+        width:55px !important ;
+        height:38px !important ;
     }
     .heading_todo_list{
         padding: 10px 20px !important;
     }
     .todo_header_box{
         padding: 0 !important;
+        height: 130px !important;
     }
     .switch_light_and_dark_mode_button{
-        top: 50px !important;
-        left: 7px !important;
+        top: 5px !important;
+        right: 7px !important;
     }
     .switch_light_and_dark_mode_button i{
         font-size: 15px !important;
@@ -134,11 +155,79 @@
         top: 5px !important;
         left: 7px !important;
     }
+    .todo_list_big_box{
+        height:85vh  !important;
+    }
+    .todo_item_buttons_box{
+        height: 37px !important;
+        padding: 0 !important;
+        left: -168px !important;
+    }
+    .todo_item_buttons_box button{
+        width: 30px !important;
+        height: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 1px !important;
+    }
+    .todo_item_buttons_box button i{
+        font-size: 15px !important;
+    }
+    .todo_item_more_buttons_box{
+        width: 35px !important;
+        height: 35px;
+    }
+    .more_box_button{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .remove_all_item_text{
+        font-size: 13px !important;
+    }
+    .delete_all_item_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
 }
 
 @media (min-width: 485px) and (max-width: 549px) {
-    .todo_item_style {
-        width: 340px !important;
+    .todo_item {
+        width: 400px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+        padding: 3px 0 !important;
+    }
+    .input_beside_icon_box{
+        padding:0px !important;
+        height: 40px;
+    }
+    .todo_input{
+        font-size: 15px !important;
+        height: 40px;
+    }
+    .todo_input::placeholder{
+        font-size: 15px !important;
+    }
+    .todo_add_button{
+        font-size: 15px !important;
+        padding: 0 !important;
+        width:55px !important ;
+        height:38px !important ;
+    }
+    .heading_todo_list{
+        padding: 10px 20px !important;
+    }
+    .todo_header_box{
+        padding: 0 !important;
+        height: 130px !important;
     }
     .offcanvas_help_section{
         width: 55% !important;
@@ -157,11 +246,28 @@
         top: 5px !important;
         left: 7px !important;
     }
+        .remove_all_item_text{
+        font-size: 13px !important;
+    }
+    .delete_all_item_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
 }
 
 @media (min-width: 550px) and (max-width: 767px) {
-    .todo_item_style {
-        width: 370px !important;
+    .todo_item {
+        width: 480px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+        padding: 3px 0 !important;
     }
     .offcanvas_help_section{
         width: 50% !important;
@@ -180,11 +286,28 @@
         top: 5px !important;
         left: 7px !important;
     }
+        .remove_all_item_text{
+        font-size: 13px !important;
+    }
+    .delete_all_item_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
+    .user_and_setting_text{
+        font-size: 13px !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .todo_item_style {
-        width: 550px !important;
+    .todo_item {
+        width: 650px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .todo_input_and_add_button_border_box{
+        width: 90% !important;
+        padding: 3px 0 !important;
     }
     .switch_light_and_dark_mode_button{
         top: 50px !important;
@@ -200,21 +323,34 @@
         top: 5px !important;
         left: 7px !important;
     }
+        .remove_all_item_text{
+        font-size: 15px !important;
+    }
+    .delete_all_item_text{
+        font-size: 15px !important;
+    }
+    .user_and_setting_text{
+        font-size: 15px !important;
+    }
+    .user_and_setting_text{
+        font-size: 15px !important;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
-    .todo_item_style {
-        width: 630px !important;
-    }
-    .switch_light_and_dark_mode_button{
-        top: 50px !important;
-        left: 7px !important;
+    .todo_item {
+        width: 730px !important;
+        padding: 5px 0 2px 2px !important;
     }
     .switch_light_and_dark_mode_button i{
-        font-size: 15px !important;
+        font-size: 25px !important;
     }
     .offcanvas_open_button i{
-        font-size: 15px !important;
+        font-size: 25px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 70px !important;
+        left: 7px !important;
     }
     .offcanvas_open_button{
         top: 5px !important;
@@ -223,18 +359,19 @@
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
-    .todo_item_style {
-        width: 820px !important;
-    }
-    .switch_light_and_dark_mode_button{
-        top: 50px !important;
-        left: 7px !important;
+    .todo_item {
+        width: 920px !important;
+        padding: 5px 0 2px 2px !important;
     }
     .switch_light_and_dark_mode_button i{
-        font-size: 15px !important;
+        font-size: 25px !important;
     }
     .offcanvas_open_button i{
-        font-size: 15px !important;
+        font-size: 25px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 70px !important;
+        left: 7px !important;
     }
     .offcanvas_open_button{
         top: 5px !important;
@@ -242,21 +379,47 @@
     }
 }
 
+@media (min-width: 1499px) {
+    .todo_item {
+        width: 920px !important;
+        padding: 5px 0 2px 2px !important;
+    }
+    .switch_light_and_dark_mode_button{
+        top: 70px !important;
+        left: 7px !important;
+    }
+    .offcanvas_open_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .todo_item_more_buttons_box{
+        width: 45px !important;
+        height: 45px !important;
+        margin-bottom: 5px !important;
+    }
+    .more_box_button{
+        width: 35px !important;
+        height: 35px !important;
+    }
+}
+
+
+
 .circle-top-right {
-    top: 8px;
-    right: 8px;
+    top: 8px !important;
+    right: 8px !important;
 }
 .circle-top-left {
-    top: 8px;
-    left: 8px;
+    top: 8px !important;
+    left: 8px !important;
 }
 .circle-bottom-right {
-    bottom: 8px;
-    right: 8px;
+    bottom: 8px !important;
+    right: 8px !important;
 }
 .circle-bottom-left {
-    bottom: 8px;
-    left: 8px;
+    bottom: 8px !important;
+    left: 8px !important;
 }
 
 
@@ -265,33 +428,32 @@
 /* password page ................................................................................................................ */
 
 .password_page_body {
-    height: 100vh;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(61, 168, 255 , 0.7),rgba(0, 64, 255 , 0.7)),
-    url(../images/to-do-list-seamless-pattern-background-business-flat-illustration-checklist-task-list-s.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    background-image: linear-gradient(rgba(61, 168, 255 , 0.7),rgba(0, 64, 255 , 0.7)) , url(../images/to-do-list-seamless-pattern-background-business-flat-illustration-checklist-task-list-s.jpg) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    overflow: hidden !important;
 }
 .password-box {
-    background: linear-gradient(rgb(165, 180, 255), rgb(200, 209, 255), rgb(229, 233, 255));
-    border: 4px solid #0d6efd;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(rgb(165, 180, 255), rgb(200, 209, 255), rgb(229, 233, 255)) !important;
+    border: 4px solid #0d6efd !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25) !important;
 
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-    padding: 2rem 1.5rem;
-    position: relative;
+    text-align: center !important;
+    font-family: "Rubik", sans-serif !important;
+    padding: 2rem 1.5rem !important;
+    position: relative !important;
 }
 .enter_password_button {
-    transition: 300ms;
+    transition: 300ms !important;
 }
 .enter_password_button:hover {
     background-color: rgb(143, 233, 192) !important;
 }
 .reset_password_button,.check_reset_password_button {
-    transition: 300ms;
+    transition: 300ms !important;
 }
 .reset_password_button:hover,.check_reset_password_button:hover {
     background-color: rgb(255, 167, 167) !important;
@@ -304,20 +466,15 @@
 
 
 @media (min-width: 300px) and (max-width: 484px) {
-    .todo_item_style {
-        width: 220px !important;
-    }
-    .offcanvas_help_section{
-        width: 70% !important;
-    }
-    .todo_input_and_add_button_border_box{
-        width: 90% !important;
-    }
+    
     .password_input::placeholder{
         font-size: 15px !important;
     }
+    .password_input{
+        height: 40px !important;
+    }
     .icon_box_beside_password_input{
-        height: 48px !important;
+        height: 40px !important;
     }
     .password-box{
         width: 90% !important;
@@ -326,43 +483,391 @@
 }
 
 @media (min-width: 485px) and (max-width: 549px) {
-    .todo_item_style {
-        width: 340px !important;
+    .password_input{
+        height: 40px !important;
     }
-    .offcanvas_help_section{
-        width: 55% !important;
-    }
-    .todo_input_and_add_button_border_box{
-        width:80%  ;
+    .icon_box_beside_password_input{
+        height: 40px !important;
     }
 }
 
 @media (min-width: 550px) and (max-width: 767px) {
-    .todo_item_style {
-        width: 370px !important;
+    .password_input{
+        height: 40px !important;
     }
-    .offcanvas_help_section{
-        width: 50% !important;
+    .icon_box_beside_password_input{
+        height: 40px !important;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .todo_item_style {
-        width: 550px !important;
+    .password_input{
+        height: 40px !important;
+    }
+    .icon_box_beside_password_input{
+        height: 40px !important;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1399px) {
-    .todo_item_style {
-        width: 630px !important;
+    .password_input{
+        height: 45px !important;
+    }
+    .icon_box_beside_password_input{
+        height: 45px !important;
     }
 }
 
 @media (min-width: 1400px) and (max-width: 1499px) {
-    .todo_item_style {
-        width: 820px !important;
+    .password_input{
+        height: 45px !important;
     }
-    .todo_input_and_add_button_border_box{
-        width:80%  ;
+    .icon_box_beside_password_input{
+        height: 45px !important;
+    }
+}
+
+
+
+
+
+/* personal-dashboard-page ................................................................................................................ */
+.personal-dashboard-box{
+    background: linear-gradient(rgb(165, 180, 255), rgb(200, 209, 255), rgb(229, 233, 255)) !important;
+}
+
+.personal-dashboard-section {
+    max-height: 60vh !important;
+    overflow-y: auto !important;
+}
+.personal-dashboard-section::-webkit-scrollbar{
+    width: 10px !important;
+}
+.personal-dashboard-section::-webkit-scrollbar-track {
+    background: #b9cdff;
+}
+.personal-dashboard-section::-webkit-scrollbar-thumb {
+    background: #6d84be;
+    border-radius: 10px;
+}
+.back_to_home_page_button{
+    top: 5px !important;
+    left: 7px !important;
+}
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 484px) {
+    .personal_dashboard_section_title{
+        color: #5d81db !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #3d59a0 !important;
+        font-size: 14px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 55% !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 55% !important;
+        font-size: 12px !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 55% !important;
+        font-size: 12px !important;
+    }
+    .personal_dashboard_section_birthday_input{
+        padding: 5px;
+        font-size: 13px;
+        border: 1px solid #cfcfcf;
+        border-radius: 10px;
+        color: #333;
+        width: 100%;
+        transition: 0.3s;
+        width:50%  !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 50% !important;
+    }
+    .Help_buttons_box{
+        margin-left: 30px !important;
+    }
+    .Help_buttons_text{
+        font-size: 13px !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 11px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45%;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px;
+    }
+}
+
+@media (min-width: 485px) and (max-width: 549px) {
+    .personal_dashboard_section_title{
+        color: #5d81db !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #3d59a0 !important;
+        font-size: 15px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 35% !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 70% !important;
+        font-size: 12px !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 70% !important;
+        font-size: 12px !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 33% !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 13px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45%;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+    .personal_dashboard_section_title{
+        color: #5d81db !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #3d59a0 !important;
+        font-size: 17px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 35% !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 60% !important;
+        font-size: 12px !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 60% !important;
+        font-size: 12px !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 35% !important;
+    } 
+    
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 13px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45%;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .personal_dashboard_section_title{
+        color: #5d81db !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #3d59a0 !important;
+        font-size: 18px !important;
+    }
+    .back_to_home_page_button{
+        top: 5px !important;
+        left: 7px !important;
+    }
+    .back_to_home_page_button i{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 28% !important;
+        margin-left: 20px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 50% !important;
+        font-size: 12px !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 50% !important;
+        font-size: 12px !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 28% !important;
+        margin-left: 20px !important;
+    }
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 14px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45%;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .personal_dashboard_section_title{
+        color: #5d81db !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #3d59a0 !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        width:25% !important;
+        margin-left: 30px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 28px !important;
+        width: 45% !important;
+        font-size: 14px !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 45% !important;
+        font-size: 14px !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width:25% !important;
+        margin-left: 30px !important;
+    }
+    
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45%;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .personal_dashboard_section_title{
+        color: #5d81db !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #3d59a0 !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 20% !important;
+        margin-left: 40px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 30px !important;
+        width: 40% !important;
+        font-size: 16px !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 40% !important;
+        font-size: 16px !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 20% !important;
+        margin-left: 40px !important;
+    }
+    
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 15px !important;
+    }
+    .personal_dashboard_section_gender_lable{
+        width: 45%;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1499px) {
+    .personal_dashboard_section_title{
+        color: #5d81db !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        color: #3d59a0 !important;
+        font-size: 20px !important;
+    }
+    .personal_dashboard_section_lable{
+        width: 23% !important;
+        margin-left: 60px !important;
+    }
+    .personal_dashboard_section_input{
+        height: 33px !important;
+        width: 40% !important;
+        font-size: 17px !important;
+    }
+    .personal_dashboard_section_textarea{
+        height: auto !important;
+        width: 40% !important;
+        font-size: 17px !important;
+    }
+    .line_between_personal_dashboard_section_inputs{
+        width: 23% !important;
+        margin-left: 60px !important;
+    }
+    
+    .personal_dashboard_section_gender_lable_text{
+        font-size: 15px !important;
+ 
+    }.personal_dashboard_section_gender_lable{
+        width: 45%;
+    }
+    .personal_dashboard_section_gender_input{
+        width: 10px;
+        margin-right: 5px;
     }
 }

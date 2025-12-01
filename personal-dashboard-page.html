@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <!-- web icon (for site) -->
+            <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+            <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon.png">
+            
+            <!-- bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+            
+            <!-- css -->
+            <link class="web_css_style" rel="stylesheet" href="assets/css (styles)/style1.css">
+
+            <link rel="stylesheet" href="assets/packages/sweeetalert/sweetalert2.min.css">
+
+            <!-- icons(CDN) -->
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+            <!-- google font -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo Tasks (Personal Dashboard)</title>
+    </head>
+    <body class="position-relative">
+        
+        <div class="pt-5 background-screen d-flex">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-12 col-lg-10 col-xl-9">
+                    
+                        <div class="border border-4 border-primary rounded-5 bg-light shadow-lg todo_list_big_box dm_todo_list_big_box">
+                            
+                            <div class="personal-dashboard-box d-flex flex-column justify-content-center align-items-center p-3 py-5 h-100 rounded-5 bg-light shadow position-relative">
+                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-right dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-left dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                                
+                                <h1 class="personal_dashboard_page_title text-center fw-bold text-primary d-inline-block pb-3 bg-light bg-transparent"> Personal Dashboard </h1>
+                                
+                                <div class="personal-dashboard-inner-box d-flex justify-content-center align-items-center p-1 rounded-5 bg-light shadow position-relative w-100 ">
+                                    <div class="personal-dashboard-section-outer-box border border-4 border-primary rounded-5 bg-light w-100 px-1 py-3">
+                                        <div class="personal-dashboard-section text-center px-md-4 px-0">
+                                            <div>
+                                                <div class="fs-3 fw-semibold personal_dashboard_section_title">My Information</div>
+                                                <div class="container-lg px-2 py-2 mt-2 border border-3 border-primary-subtle rounded-4">
+
+                                                    <form class="d-flex justify-content-start align-items-center mt-1" action="">
+                                                        <label class="text-start ps-2 form-label fs-5 fw-semibold personal_dashboard_section_lable" for="">full name :</label>
+                                                        <input class="form-control personal_dashboard_section_input" type="">
+                                                    </form>
+
+                                                    <div class="border-bottom mt-1 line_between_personal_dashboard_section_inputs"></div>
+
+                                                    <form class="d-flex justify-content-start align-items-center mt-1" action="">
+                                                        <label class="text-start ps-2 form-label fs-5 fw-semibold personal_dashboard_section_lable" for="">User name :</label>
+                                                        <input class="form-control personal_dashboard_section_input" type="text">
+                                                    </form>
+
+                                                    <div class="border-bottom mt-1 line_between_personal_dashboard_section_inputs"></div>
+
+                                                    <form class="d-flex justify-content-start align-items-center mt-1" action="">
+                                                        <label class="text-start ps-2 form-label fs-5 fw-semibold personal_dashboard_section_lable" for="">Phone number :</label>
+                                                        <input class="form-control personal_dashboard_section_input" type="">
+                                                    </form>
+                                                    
+                                                    <div class="border-bottom mt-1 line_between_personal_dashboard_section_inputs"></div>
+
+                                                    <form class="d-flex justify-content-start align-items-center mt-1" action="">
+                                                        <label class="text-start ps-2 form-label fs-5 fw-semibold personal_dashboard_section_lable" for="">Email :</label>
+                                                        <input class="form-control personal_dashboard_section_input" type="email">
+                                                    </form>
+
+                                                    <div class="border-bottom mt-1 line_between_personal_dashboard_section_inputs"></div>
+
+                                                    <form class="d-flex justify-content-start align-items-center mt-1" action="">
+                                                        <label class="text-start ps-2 form-label fs-5 fw-semibold personal_dashboard_section_lable" for="">Bio :</label>
+                                                        <textarea class="form-control personal_dashboard_section_textarea"></textarea>
+                                                    </form>
+
+                                                    <div class="border-bottom mt-1 line_between_personal_dashboard_section_inputs"></div>
+
+                                                    <form class="d-flex justify-content-start align-items-center mt-1 " action="">
+                                                        <label class="text-start ps-2 form-label fs-5 fw-semibold personal_dashboard_section_lable" for="">Birthday :</label>
+                                                        <input class="form-control personal_dashboard_section_input personal_dashboard_section_birthday_input" type="date">
+                                                    </form>
+                                                    
+                                                    <div class="border-bottom mt-1 line_between_personal_dashboard_section_inputs"></div>
+
+                                                    <form class="d-flex justify-content-start align-items-center mt-1" action="">
+                                                        <label class="text-start ps-2 form-label fs-5 fw-semibold personal_dashboard_section_lable" for="">Gender :</label>
+                                                        <div class="personal_dashboard_section_input d-flex justify-content-center align-items-center border border-1 border-secondary-subtle bg-white rounded-2">
+                                                            <label class="personal_dashboard_section_gender_lable me-1 border border-1 border-secondary-subtle bg-light rounded-2 d-flex justify-content-center flex-row align-items-center" for="">
+                                                                <input class="personal_dashboard_section_gender_input" name="gender" type="radio" value="male"><span class="personal_dashboard_section_gender_lable_text small ms-1">male</span>
+                                                            </label>
+                                                            <label class="personal_dashboard_section_gender_lable border border-1 border-secondary-subtle bg-light rounded-2 d-flex justify-content-center flex-row align-items-center" for="">
+                                                                <input class="personal_dashboard_section_gender_input" name="gender" type="radio" value="male"><span class="personal_dashboard_section_gender_lable_text small ms-1">female</span>
+                                                            </label>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+
+                                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                            <div class="">
+                                                <div class="fs-3 fw-semibold personal_dashboard_section_title">Task Actions</div>
+                                                <ul class="px-2 py-1 border border-3 border-primary-subtle rounded-4 my-1 mx-2 list-unstyled Help_buttons_dropdown_box dm_Help_box">
+                                                    <li><span class="d-flex align-items-baseline"><button class="btn btn-primary px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-play-circle-line fs-5 text-light"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis Help_buttons_text dm_Help_buttons_text">This icon is meaning you are doing item</span></span><hr class="my-2"></li>
+                                                    <li><span class="d-flex align-items-baseline"><button class="btn btn-success px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-checkbox-circle-line fs-5 text-light"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis Help_buttons_text dm_Help_buttons_text">This icon is meaning you did item</span></span><hr class="my-2"></li>
+                                                    <li><span class="d-flex align-items-baseline"><button class="btn btn-info px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-restart-line fs-5 text-light"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis Help_buttons_text dm_Help_buttons_text">This icon is meaning refresh item to first mood</span></span><hr class="my-2"></li>
+                                                    <li><span class="d-flex align-items-baseline"><button class="btn btn-secondary px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-edit-2-line fs-5 text-light"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis Help_buttons_text dm_Help_buttons_text">This icon is meaning edit item</span></span><hr class="my-2"></li>
+                                                    <li><span class="d-flex align-items-baseline"><button class="btn btn-danger px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-delete-bin-line fs-5 text-light"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis Help_buttons_text dm_Help_buttons_text">This icon is meaning delete item</span></span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            
+                            <div class="position-relative">
+                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-bottom-right dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                                <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-bottom-left dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary btn-outline-light border-2 fw-semibold position-absolute back_to_home_page_button d-flex flex-column" type="button">
+            <i class="ri-arrow-left-s-line fs-4 switch_light_mode_icon"></i>
+        </button>
+        <button class="btn btn-primary btn-outline-light border-2 fw-semibold position-absolute switch_light_and_dark_mode_button d-flex flex-column" type="button">
+            <i class="ri-sun-line fs-4 switch_light_mode_icon"></i>
+            <i class="ri-moon-line fs-4 switch_dark_mode_icon"></i>
+        </button>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/javascript/personal-dashboard-page.js"></script>
+    </body>
+</html>

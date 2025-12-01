@@ -4,6 +4,10 @@
     <head>
         <!-- web icon (for site) -->
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon.png">
         
         <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -24,7 +28,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>(ToDo Tasks) home</title>
+        <title>ToDo Tasks (home)</title>
     </head>
 
     <body class="position-relative">
@@ -37,29 +41,17 @@
         </div>
 
             <div class="offcanvas-body d-flex flex-column mt-4 position-relative pb-5">
-                <div class="dropdown dropdown_help_button">
-                    <button type="button" class="btn btn-outline-primary border-2 rounded-3 dropdown-toggle dm_Help_buttons_dropdown_button" data-bs-toggle="dropdown">Help buttons</button>
-                    <ul class="dropdown-menu px-2 py-3 border-3 border-primary-subtle rounded-4 mt-1 dm_Help_buttons_dropdown_box">
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-primary px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-play-circle-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning you are doing item</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-success px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-checkbox-circle-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning you did item</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-info px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-restart-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning refresh item to first mood</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-secondary px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-edit-2-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning edit item</span></span><hr class="my-2"></li>
-                        <li><span class="d-flex align-items-baseline"><button class="btn btn-danger px-1 py-0 rounded-4 border border-2 border-light shadow me-1"><i class="ri-delete-bin-line fs-5 text-light px-1"></i></button><span class="ms-3 me-md-2 fs-6 fw-semibold text-dark-emphasis dm_Help_buttons_dropdown_text">This icon is meaning delete item</span></span></li>
-                    </ul>
-                </div>
                 
                 <div class="mt-5 text-center position-absolute delete_all_item_box">
                     <hr class="my-2">
-                    <span class="fs-6 fw-semibold text-dark-emphasis dm_remove_all_item_text">
+                    <span class="fs-6 fw-semibold text-dark-emphasis remove_all_item_text dm_remove_all_item_text">
                         Do you want to remove all of your items?
-                        <br>
-                        Click this button.
                     </span>
                     <div class="d-flex justify-content-center mt-2">
                             
                         <button class=" btn btn-danger bg-danger-subtle p-1 mt-1 ms-2 rounded-3 border-2 w-50 shadow delete_all_item_button dm_delete_all_item_button" onclick="todo_clear_button()" type="button">
                             <i class="ri-delete-bin-line fs-5 text-danger px-1 dm_delete_all_item_button_text"></i>
-                            <p class="text-danger delete_all_item_text mb-0 dm_delete_all_item_button_text">Delete all items</p>
+                            <p class="text-danger mb-0 delete_all_item_text dm_delete_all_item_button_text">Delete all items</p>
                         </button>
                     </div>
                 </div>
@@ -67,15 +59,15 @@
             
             <div class="bg-info-subtle d-flex flex-column justify-content-center align-items-start px-1 py-2 mx-3 mb-2 rounded-4 border border-2 border-primary position-absolute bottom-0 start-0 dm_user_and_setting_box" style="width: 90%;">
                 <div class="">
-                    <button class="btn border-0 mb-1 p-0 px-3 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
+                    <button class="btn border-0 mb-1 p-0 px-2 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
                         <i class="ri-shield-user-line text-primary fs-4 dm_user_and_setting_text"></i>
-                        <span class="text-primary fs-6 fw-semibold dm_user_and_setting_text">User information</span>
+                        <span class="text-primary fs-6 ms-1 fw-semibold user_and_setting_text dm_user_and_setting_text">Personal Dashboard</span>
                     </button>
                 </div>
                 <div class="">
-                    <button class="btn border-0 p-0 px-3 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
+                    <button class="btn border-0 p-0 px-2 rounded-4 d-flex justify-content-center align-items-center setting_and_user_button dm_setting_and_user_button">
                         <i class="ri-settings-5-line text-primary fs-4 dm_user_and_setting_text"></i>
-                        <span class="text-primary fs-6 fw-semibold dm_user_and_setting_text">Setting</span>
+                        <span class="text-primary fs-6 ms-1 fw-semibold user_and_setting_text dm_user_and_setting_text">Setting</span>
                     </button>
                 </div>
             </div>
@@ -84,7 +76,7 @@
 
         <!-- Button to open the offcanvas sidebar -->
         <button class="btn btn-primary btn-outline-light border-2 fw-semibold position-absolute top-0 start-0 dm_offcanvas_open_button offcanvas_open_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-            <i class="ri-arrow-right-s-line fs-4"></i>
+            <i class="ri-menu-line fs-4"></i>
         </button>
 
 
@@ -95,25 +87,27 @@
                         <div class="d-flex justify-content-center">
                             <h1 class="text-center fw-bold text-primary d-inline-block my-3 p-3 px-5 bg-light border border-4 border-primary rounded-5 heading_todo_list dm_heading_todo_list"> ToDo List </h1>
                         </div>
-                        <div class="border border-4 border-primary rounded-5 bg-light  shadow-lg dm_todo_list_big_box">
+                        <div class="border border-4 border-primary rounded-5 bg-light shadow-lg dm_todo_list_big_box">
                             
-                            <div class="todo_header_box d-flex justify-content-center align-items-center p-3 py-5 rounded-top-5 bg-light shadow position-relative dm_todo_header_box todo_header_box">
+                            <div class="todo_header_box d-flex flex-column justify-content-center align-items-center p-3 py-5 rounded-top-5 bg-light shadow position-relative dm_todo_header_box todo_header_box">
                                 <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-right dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
                                 <div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary position-absolute circle-top-left dm_around_circles"><div class="p-1 bg-info-subtle rounded-circle border border-2 border-primary"></div></div>
 
-                                <div class="border border-2 border-primary rounded-4 d-flex justify-content-center w-75 py-2 dm_todo_input_and_add_button_border_box todo_input_and_add_button_border_box">
+                                <div class="border border-2 border-primary rounded-4 d-flex justify-content-center w-75 py-2 mt-3 todo_input_and_add_button_border_box dm_todo_input_and_add_button_border_box ">
                                     <div class="w-100 ms-2">
                                         <div class="d-flex justify-content-center">
                                             <div class="d-flex justify-content-center align-items-center py-1 px-3 rounded-0 rounded-start-4 shadow border border-2 border-end-0 border-primary bg-info-subtle dm_input_beside_icon_box input_beside_icon_box"><i class="ri-todo-line text-primary fs-4 mx-1"></i></div>
                                             <input class="rubic_font todo_input form-control rounded-0 rounded-end-4 shadow border border-2 border-primary fs-5 dm_todo_input" type="text" placeholder="task to be done">
                                         </div>
-                                        <span class="empty_input_error text-danger d-none mt-3 ms-2 dm_empty_input_error">!!! please fill in this field.</span>
                                     </div>
                                     <button class="todo_add_button btn btn-primary mx-2 rounded-4 shadow border border-2 border-light fs-5 dm_todo_add_button" style="width: 70px; height: 45px;" type="button">add</button>
                                 </div>
+                                <div class="w-75 mt-1">
+                                    <span class="empty_input_error text-danger mt-3 ms-2 dm_empty_input_error"></span>
+                                </div>
                             </div>
                             
-                            <div class="list_box d-flex justify-content-center py-3 rounded-bottom-5 border-bottom border-3 border-primary bg-light overflow-y-auto mb-5 dm_list_box" style="height: 400px;">
+                            <div class="list_box d-flex justify-content-center py-3 rounded-bottom-5 border-bottom border-3 border-primary bg-light mb-5 dm_list_box" style="height: 400px;">
                                 <ul class="todo_list list-unstyled">
                                     
                                 </ul>
@@ -136,6 +130,6 @@
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/javascript/index.js"></script>
+        <script src="assets/javascript/home-page.js"></script>
     </body>
 </html>
